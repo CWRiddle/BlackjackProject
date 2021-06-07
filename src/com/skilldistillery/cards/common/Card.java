@@ -2,8 +2,8 @@ package com.skilldistillery.cards.common;
 
 public class Card {
 
-	Suit suit;
-	Rank rank;
+	private Suit suit;
+	private Rank rank;
 	
 	public Card(Suit suit, Rank rank) {
 		this.suit = suit;

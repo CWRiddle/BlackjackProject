@@ -17,15 +17,15 @@ public class CardPrinter {
 	
 	public void printHand() {
 		
-		System.out.println(printMultipleCards(0, hand.size(), false));
+		System.out.print(printMultipleCards(0, hand.size(), false));
 		
 	}
 	
 	public void printHand(boolean isDealerHand) {
 		if(isDealerHand)
-			System.out.println(printMultipleCards(0, hand.size(), true));
+			System.out.print(printMultipleCards(0, hand.size(), true));
 		else
-			System.out.println(printMultipleCards(0, hand.size(), false));
+			System.out.print(printMultipleCards(0, hand.size(), false));
 			
 		
 	}
@@ -86,8 +86,6 @@ public class CardPrinter {
 				card = loadSingleCard(index1 + counter);
 			String[] splitLines = card.split("\n");
 			for(int j=0; j<splitLines.length; j++) {
-//				if(cardStrips.get(j) == null)
-//					cardStrips.add(new StringBuilder(splitLines[j]));
 				try {
 					cardStrips.get(j).append(splitLines[j]);			
 					
