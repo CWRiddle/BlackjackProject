@@ -5,9 +5,9 @@ import java.util.List;
 
 public class BlackJackHand {
 
-	List<Card> hand;
-	int handValue = 0;
-	String name;
+	private List<Card> hand;
+	private int handValue = 0;
+	private String name;
 	
 	public BlackJackHand(String name) {
 		hand = new ArrayList<>();

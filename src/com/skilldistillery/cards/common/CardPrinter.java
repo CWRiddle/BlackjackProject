@@ -5,7 +5,7 @@ import java.util.List;
 
 public class CardPrinter {
 
-	List<Card> hand;
+	private List<Card> hand;
 	
 	public CardPrinter(List<Card> hand) {
 		this.hand = hand;
