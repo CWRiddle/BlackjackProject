@@ -35,4 +35,8 @@ public class Deck {
 		return this.deck.size();
 	}
 	
+	public List<Card> getDeck(){
+		return this.deck;
+	}
+	
 }

@@ -35,4 +35,8 @@ public class BlackJackHand {
 		return this.name;
 	}
 	
+	public List<Card> getHand(){
+		return this.hand;
+	}
+	
 }

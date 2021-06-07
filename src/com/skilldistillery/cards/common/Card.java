@@ -5,7 +5,7 @@ public class Card {
 	Suit suit;
 	Rank rank;
 	
-	Card(Suit suit, Rank rank) {
+	public Card(Suit suit, Rank rank) {
 		this.suit = suit;
 		this.rank = rank;
 	}
@@ -22,9 +22,24 @@ public class Card {
 		return this.rank.getRank();
 	}
 	
+	public String getRankSymbol() {
+		return this.rank.getRankSymbol();
+	}
+	
+	public String getSuitSymbol() {
+		return this.suit.getSuitSymbol();
+	}
+	
 	@Override
 	public String toString() {
 		return this.getRank() + " of " + this.getSuit();
+	}
+	
+	public void printCardTester() {
+		
+		
+		
+		
 	}
 
 	
